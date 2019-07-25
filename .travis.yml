@@ -14,10 +14,6 @@
 # limitations under the License.
 
 language: java
-matrix:
-  include:
-    - os: linux-ppc64le
-      jdk: openjdk8
 
 jdk:
   - openjdk8
@@ -29,6 +25,9 @@ jdk:
 matrix:
   allow_failures:
     - jdk: openjdk-ea
+  include:
+    - os: linux-ppc64le
+      jdk: openjdk8    
 
 script:
   - mvn
