@@ -25,7 +25,7 @@ jdk:
 matrix:
   include:
     - os: linux-ppc64le
-      jdk: openjdk8
+      jdk: openjdk11
       env: JDK=adoptopenjdk11
       script: source ./install-jdk.sh --url 'https://api.adoptopenjdk.net/v2/binary/releases/openjdk11?openjdk_impl=hotspot&os=linux&arch=ppc64le&release=latest&heap_size=normal&type=jdk'
   allow_failures:
