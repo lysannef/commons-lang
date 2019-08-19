@@ -15,6 +15,9 @@
 
 language: java
  
+before_install:
+- unset -v _JAVA_OPTIONS
+- wget https://github.com/sormuras/bach/raw/support-older-jdks/install-jdk.sh
 
 matrix:
   include:
